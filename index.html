@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Max Nordhagen – Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Hopp til innhold</a>
+
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Hovednavigasjon">
+      <a href="index.html" class="logo" aria-label="Max Nordhagen – Til forsiden">
+        <img src="/img/erasebg-transformed.png" alt="Max logo" width="60" height="60">
+      </a>
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Åpne meny">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html" class="nav-link active" aria-current="page">Forside</a></li>
+        <li><a href="prosjecter.html" class="nav-link">Prosjekter</a></li>
+        <li><a href="om meg.html" class="nav-link">Om meg</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-text">
+        <p class="hero-label">Portfolio</p>
+        <h1 id="hero-heading" class="hero-name">Max<br>Nordhagen</h1>
+        <p class="hero-school">Kuben VGS</p>
+        <div class="hero-actions">
+          <a href="prosjecter.html" class="btn btn-primary">Se prosjekter</a>
+          <a href="om meg.html" class="btn btn-outline">Om meg</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick info strip -->
+    <section class="info-strip" aria-label="Nøkkelinformasjon">
+      <div class="info-item">
+        <span class="info-num">16</span>
+        <span class="info-desc">år gammel</span>
+      </div>
+      <div class="info-item">
+        <span class="info-num">Kuben</span>
+        <span class="info-desc">VGS, Oslo</span>
+      </div>
+      <div class="info-item">
+        <span class="info-num">2+</span>
+        <span class="info-desc">Prosjekter</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© 2026 Max Nordhagen</p>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+
+</html>

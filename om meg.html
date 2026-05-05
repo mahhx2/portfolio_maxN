@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Om meg – Max Nordhagen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Hopp til innhold</a>
+
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Hovednavigasjon">
+      <a href="index.html" class="logo" aria-label="Max Nordhagen – Til forsiden">
+        <img src="/img/erasebg-transformed.png" alt="Max logo" width="60" height="60">
+      </a>
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Åpne meny">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html" class="nav-link">Forside</a></li>
+        <li><a href="prosjecter.html" class="nav-link">Prosjekter</a></li>
+        <li><a href="om meg.html" class="nav-link active" aria-current="page">Om meg</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="about-hero" aria-labelledby="about-title">
+      <div class="about-photo-wrap">
+        <div class="profile-circle">
+          <img src="img/bilde_av_meg2.jpg" alt="Bilde av Max Nordhagen" width="160" height="160">
+        </div>
+      </div>
+      <div class="about-text">
+        <h1 id="about-title">Om meg</h1>
+        <p class="about-intro">Hei! Jeg heter Max, er 16 år og går på Kuben VGS i Oslo.
+           Jeg er interessert i teknologi, kreativ redigering, webutvikling og musikk. 
+           Jeg har drivet med redigering i 2 år og har gjort masse forskjellige prosjekter,
+            jeg hadde også en liten business der hvor jeg edita videoer for penger, ofte for famile og venner.</p>
+
+        <dl class="contact-list" aria-label="Kontaktinformasjon">
+          <div class="contact-item">
+            <dt>E-post</dt>
+            <dd><a href="mailto:maxdrater@gmail.com">maxdrater@gmail.com</a></dd>
+          </div>
+          <div class="contact-item">
+            <dt>Telefon</dt>
+            <dd><a href="tel:11223344">11 22 33 44</a></dd>
+          </div>
+          <div class="contact-item">
+            <dt>Skole</dt>
+            <dd>Kuben VGS, Oslo</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="about-video-section" aria-labelledby="video-section-title">
+      <h2 id="video-section-title" class="section-heading">Se meg i aksjon</h2>
+      <div class="video-wrap">
+        <video src="VideoOmMeg.mp4" controls preload="metadata" aria-label="Video om Max">
+          Nettleseren din støtter ikke videoavspilling.
+        </video>
+      </div>
+    </section>
+
+    <section class="vinyl-section" aria-labelledby="vinyl-title">
+      <h2 id="vinyl-title" class="section-heading">Musikk jeg liker</h2>
+      <div class="vinyl-scene">
+
+        <!-- Album cover using real image -->
+        <div class="album-cover">
+          <img src="img/The_Perfect_Luv_Tape_by_Lil_Uzi_Vert.jpg" alt="The Pink Tape – Lil Uzi Vert album cover" class="cover-img">
+        </div>
+
+        <!-- Vinyl disc sliding out -->
+        <div class="vinyl-sleeve">
+          <div class="vinyl-disc" title="Hover to spin">
+            <div class="vinyl-label">
+              <div class="vinyl-label-dot"></div>
+              <div class="vinyl-label-text">Lil Uzi</div>
+              <div class="vinyl-label-text">2023</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tracklist -->
+        <div class="tracklist-panel">
+          <div class="track-item track-featured">Do What I Want</div>
+          <div class="track-item">Of Course We Ghetto Flowers</div>
+          <div class="track-item track-featured">erase your social</div>
+          <div class="track-item">original Uzi</div>
+          <div class="track-item">Money Mitch</div>
+          <div class="track-item track-featured">Sideline watching</div>
+          <div class="track-item">i can drive</div>
+          <div class="track-item">your lost</div>
+          <div class="track-item track-featured">Ronda (winners)</div>
+          <div class="track-item">Seven million</div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© 2026 Max Nordhagen</p>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROSJEKTER – Max Nordhagen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .project-card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .project-card:has(.project-card-link) {
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-card:has(.project-card-link):hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Hopp til innhold</a>
+
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Hovednavigasjon">
+      <a href="index.html" class="logo" aria-label="Max Nordhagen – Til forsiden">
+        <img src="/img/erasebg-transformed.png" alt="Max logo" width="60" height="60">
+      </a>
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Åpne meny">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html" class="nav-link">Forside</a></li>
+        <li><a href="prosjecter.html" class="nav-link active" aria-current="page">Prosjekter</a></li>
+        <li><a href="om meg.html" class="nav-link">Om meg</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="page-title">
+      <h1 id="page-title">PROSJEKTER</h1>
+      <p class="page-subtitle">Ting jeg har laget og utforsket</p>
+    </section>
+
+    <section class="projects-grid" aria-label="Prosjektoversikt">
+
+      <article class="project-card" aria-labelledby="proj1-title">
+        <div class="project-media">
+          <video src="once_more_vid.mp4" controls preload="metadata" aria-label="Video: Once More edit">
+            Nettleseren din støtter ikke videoavspilling.
+          </video>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">Videoredigering</span>
+          <h2 id="proj1-title" class="project-title">carti – Edit</h2>
+          <p class="project-desc">En videoredigering jeg lagde som prosjekt på ungdomsskolen.</p>
+        </div>
+      </article>
+
+      <article class="project-card" aria-labelledby="proj2-title">
+        <div class="project-media">
+          <video src="yeat_edit.mp4" controls preload="metadata" aria-label="Video: Yeat edit">
+            Nettleseren din støtter ikke videoavspilling.
+          </video>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">Videoredigering</span>
+          <h2 id="proj2-title" class="project-title">Yeat – Edit</h2>
+          <p class="project-desc">En musikkvideo-edit med kreativ klipping og effekter.</p>
+        </div>
+      </article>
+
+      <article class="project-card" aria-labelledby="proj3-title">
+        <a href="/webintro_uke37/index.html" target="_blank" rel="noopener noreferrer" class="project-card-link"
+          aria-label="Åpne Min første nettleser">
+          <div class="project-media">
+            <img src="/img/cash_carti_img.png" alt="Cash Carti prosjekt"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Webutvikling</span>
+            <h2 id="proj3-title" class="project-title">Min første nettleser</h2>
+            <p class="project-desc">Et tidlig webprosjekt der jeg lærte grunnleggende HTML og CSS.</p>
+          </div>
+        </a>
+        </atricle>
+      </article>
+      <article class="project-card" aria-labelledby="proj2-title">
+        <div class="project-media">
+          <video src="studioOpptak.mp4" controls preload="metadata" aria-label="Video:studio oppgave">
+            Nettleseren din støtter ikke videoavspilling.
+          </video>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">Live senning</span>
+          <h2 id="proj2-title" class="project-title">Studio Opptak</h2>
+          <p class="project-desc">Studio oppgave, jeg hjelpet til med grafikk og var Kortinator.</p>
+        </div>
+      </article>
+
+            <article class="project-card" aria-labelledby="proj3-title">
+        <a href="pacman.html" target="_blank" rel="noopener noreferrer" class="project-card-link"
+          aria-label="Åpne Min første nettleser">
+          <div class="project-media">
+            <img src="/img/pacman.png" alt="pacman"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">fordypning</span>
+            <h2 id="proj3-title" class="project-title">pacman</h2>
+            <p class="project-desc">mitt først spill prosjekt som jeg fordyper meg inn i.</p>
+          </div>
+        </a>
+        </atricle>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© 2026 Max Nordhagen</p>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+
+</html>
